@@ -38,16 +38,28 @@ It will return JSON Header :
 
 ## Docker
 
-Build image :
+Build image 1 :
 
 ```
 docker build -t wik-dps-02 .
 ```
 
-Start image :
+Build image 2 :
+
+```
+docker build -t wik-dps-02-2 -f Dockerfile.2 .
+```
+
+Start image 1 :
 
 ```
 docker run --name wik-dps-02 --rm -it -p 3000:3000 wik-dps-02
+```
+
+Start image 2 :
+
+```
+docker run --name wik-dps-02-2 --rm -it -p 3000:3000 wik-dps-02-2
 ```
 
 ### Dockerfile optimisation
