@@ -1,6 +1,7 @@
 # Stage 1
 FROM node:latest
 WORKDIR /usr/src/app
+RUN ["apt-get", "update"]
 COPY ["package.json", "package-lock.json", "./"]
 RUN ["npm", "install"]
 COPY ["index.ts", "tsconfig.json", "./"]
