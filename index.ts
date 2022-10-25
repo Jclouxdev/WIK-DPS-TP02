@@ -30,7 +30,7 @@ const start = async () => {
     var env_port: number = !process.env.PING_LISTEN_PORT
       ? 3000
       : +process.env.PING_LISTEN_PORT;
-    await server.listen({ port: env_port });
+    await server.listen({ port: env_port, host: "0.0.0.0" });
   } catch (err) {
     server.log.error(err);
     process.exit(1);

@@ -5,5 +5,9 @@
   },
   "dependencies": {
     "fastify": "^4.7.0"
+  },
+  "scripts": {
+    "tsc": "npx tsc",
+    "start": "node ./build/index"
   }
 }

@@ -1,4 +1,4 @@
-# 📝 DevOps WIK-DPS-TP01
+# 📝 DevOps WIK-DPS-TP02
 
 ## Initialisation
 
@@ -34,4 +34,18 @@ It will return JSON Header :
 
 ```
 {"host":"localhost:3000","user-agent":"curl/7.77.0","accept":"*/*"}
+```
+
+## Docker
+
+Build image :
+
+```
+docker build -t wik-dps-02 .
+```
+
+Start image :
+
+```
+docker run --rm -it -p 3000:3000 wik-dps-02
 ```
