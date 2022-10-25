@@ -147,3 +147,13 @@ EXPOSE 3000/tcp
 >
 > - use the -p flag on docker run to individually specify each host-to-container port mapping, or
 > - use the -P flag to automatically map all exposed container port(s) to an ephemeral high-ordered host port(s)
+
+#### Reducing the Docker Image file size
+
+**1. Removing Obsolete Files :**
+
+**Using Multi-stage Builds**
+
+We will not use multi-stage on the first Image but we will create an other image with multi-stages.
+
+**2. Using a lighter base image :**
