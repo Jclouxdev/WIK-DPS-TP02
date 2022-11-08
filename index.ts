@@ -18,6 +18,8 @@ const opts: RouteShorthandOptions = {
 };
 
 server.get("/ping", opts, async (request, response) => {
+  var os = require("os");
+  console.log(os.hostname());
   return JSON.stringify(request.headers);
 });
 
